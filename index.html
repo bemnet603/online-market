@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ethio Marketplace - Ethiopia's community buy and sell platform.">
+  <title>Ethio Marketplace - Buy & Sell in Ethiopia</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <span class="brand-icon">🛒</span>
+        Ethio Marketplace
+      </a>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">☰</button>
+
+      <div id="nav-links" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="pages/marketplace.html">Marketplace</a>
+        <a href="pages/sell-item.html">Sell Item</a>
+      </div>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        <a href="pages/login.html" class="btn btn-secondary btn-sm">Login</a>
+        <a href="pages/register.html" class="btn btn-primary btn-sm">Register</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Ethiopia's Community Marketplace</h1>
+          <p>
+            A modern platform where Ethiopians can buy and sell products within their local communities.
+            Simple, organized, and built for real people — from students to families to small businesses.
+          </p>
+          <div class="hero-buttons">
+            <a href="pages/marketplace.html" class="btn btn-primary btn-lg">Browse Marketplace</a>
+            <a href="pages/sell-item.html" class="btn btn-outline btn-lg">Start Selling</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="hero-placeholder" role="img" aria-label="Marketplace illustration">
+            <span class="placeholder-label">Marketplace Preview</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marketplace Search Bar -->
+    <section class="section section-compact">
+      <div class="container">
+        <form id="home-search-form" class="search-bar" role="search">
+          <input
+            type="search"
+            id="home-search-input"
+            class="form-control"
+            placeholder="Search by category, product, or location..."
+            aria-label="Search marketplace"
+          >
+          <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Browse Categories -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Browse Categories</h2>
+        <p class="section-subtitle">
+          Explore organized categories designed for Ethiopian buyers and sellers.
+          Listings will appear here once sellers start posting.
+        </p>
+        <div id="categories-grid" class="grid-4">
+          <!-- Category cards loaded by home.js -->
+        </div>
+        <div class="text-center" style="margin-top: var(--space-xl);">
+          <a href="pages/marketplace.html" class="btn btn-primary">Explore Marketplace</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Ethio Marketplace -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Why Choose Ethio Marketplace?</h2>
+        <p class="section-subtitle">A better way to buy and sell than scattered social media posts.</p>
+        <div class="grid-3">
+          <div class="card feature-card">
+            <div class="feature-icon">🏘️</div>
+            <h3>Built for Ethiopia</h3>
+            <p>Designed with Ethiopian cities, categories, and currency in mind. Everything feels local and relevant.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-icon">📋</div>
+            <h3>Organized Listings</h3>
+            <p>Products are categorized, searchable, and easy to browse — not buried in random group chats or feeds.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-icon">🤝</div>
+            <h3>Community First</h3>
+            <p>Connect with buyers and sellers in your own city. Trade locally, safely, and with confidence.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-subtitle">Getting started takes just a few minutes.</p>
+        <div class="grid-3">
+          <div class="card step-card">
+            <div class="step-number">1</div>
+            <h3>Create Your Account</h3>
+            <p>Register with your name, email, phone number, and city. Your profile helps buyers trust you.</p>
+          </div>
+          <div class="card step-card">
+            <div class="step-number">2</div>
+            <h3>List or Browse</h3>
+            <p>Post items you want to sell with photos and details, or search the marketplace for what you need.</p>
+          </div>
+          <div class="card step-card">
+            <div class="step-number">3</div>
+            <h3>Connect Locally</h3>
+            <p>Contact the seller, agree on terms, and meet in your area to complete the exchange.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Community Benefits -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Community Benefits</h2>
+        <p class="section-subtitle">Ethio Marketplace supports people across Ethiopian communities.</p>
+        <div class="grid-2">
+          <div class="card benefit-card">
+            <h3>🎓 Students</h3>
+            <p>Sell textbooks, electronics, and dorm items after each semester. Find affordable study materials from fellow students nearby.</p>
+          </div>
+          <div class="card benefit-card">
+            <h3>🏠 Families</h3>
+            <p>List furniture, appliances, and household goods when moving or upgrading. Discover quality used items at fair prices.</p>
+          </div>
+          <div class="card benefit-card">
+            <h3>👤 Individuals</h3>
+            <p>Turn unused phones, clothing, and personal items into cash. Browse organized listings instead of endless scrolling.</p>
+          </div>
+          <div class="card benefit-card">
+            <h3>🏪 Small Businesses</h3>
+            <p>Promote products to local customers in your city. Reach buyers who are actively looking for what you sell.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marketplace Safety Tips -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Marketplace Safety Tips</h2>
+        <p class="section-subtitle">Stay safe when buying and selling in your community.</p>
+        <div class="safety-grid">
+          <div class="safety-item">
+            <span class="safety-icon">📍</span>
+            <div>
+              <h4>Meet in Public Places</h4>
+              <p>Choose busy, well-lit locations for exchanges. Shopping centers and cafes are good options.</p>
+            </div>
+          </div>
+          <div class="safety-item">
+            <span class="safety-icon">🔍</span>
+            <div>
+              <h4>Inspect Before Paying</h4>
+              <p>Always check the item's condition in person before completing any payment.</p>
+            </div>
+          </div>
+          <div class="safety-item">
+            <span class="safety-icon">💳</span>
+            <div>
+              <h4>Never Pay in Advance</h4>
+              <p>Avoid sending money before seeing the product. Complete transactions in person when possible.</p>
+            </div>
+          </div>
+          <div class="safety-item">
+            <span class="safety-icon">🚨</span>
+            <div>
+              <h4>Report Suspicious Activity</h4>
+              <p>If something feels wrong, trust your instincts and contact our support team immediately.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Ready to Join Ethio Marketplace?</h2>
+        <p>Create your account today and be among the first to list or discover products in your community.</p>
+        <div class="cta-buttons">
+          <a href="pages/register.html" class="btn btn-lg">Create Free Account</a>
+          <a href="pages/marketplace.html" class="btn btn-outline btn-lg cta-outline">Browse Marketplace</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Ethio Marketplace</h4>
+          <p class="footer-text">Ethiopia's community marketplace for buying and selling locally.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/marketplace.html">Marketplace</a></li>
+            <li><a href="pages/sell-item.html">Sell Item</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="pages/marketplace.html?category=phones">Phones</a></li>
+            <li><a href="pages/marketplace.html?category=computers">Computers</a></li>
+            <li><a href="pages/marketplace.html?category=books">Books</a></li>
+            <li><a href="pages/marketplace.html?category=furniture">Furniture</a></li>
+            <li><a href="pages/marketplace.html?category=fashion">Fashion</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+251111234567">+251 11 123 4567</a></li>
+            <li><a href="mailto:info@ethiomarketplace.et">info@ethiomarketplace.et</a></li>
+            <li>Bole, Addis Ababa, Ethiopia</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ethio Marketplace. All rights reserved.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="Telegram">✈️</a>
+          <a href="#" aria-label="Instagram">📷</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scroll-top" class="scroll-top" aria-label="Scroll to top">↑</button>
+
+  <script src="js/data.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

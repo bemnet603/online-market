@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="List your item on Ethio Marketplace.">
+  <title>Sell Item - Ethio Marketplace</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container">
+      <a href="../index.html" class="navbar-brand">
+        <span class="brand-icon">🛒</span>
+        Ethio Marketplace
+      </a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">☰</button>
+      <div id="nav-links" class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="marketplace.html">Marketplace</a>
+        <a href="sell-item.html">Sell Item</a>
+      </div>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        <a href="login.html" class="btn btn-secondary btn-sm">Login</a>
+        <a href="register.html" class="btn btn-primary btn-sm">Register</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="sell-page">
+      <div class="container">
+        <div class="sell-form-container">
+          <h1>Sell an Item</h1>
+          <p class="section-subtitle">Fill in the details below to create your listing. Data will be saved once the backend is connected.</p>
+
+          <form id="sell-form" novalidate>
+            <div class="form-group">
+              <label for="product-name">Product Name *</label>
+              <input type="text" id="product-name" class="form-control" placeholder="What are you selling?">
+              <div id="product-name-error" class="form-error"></div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="product-category">Category *</label>
+                <select id="product-category" class="form-control">
+                  <option value="">Select a category</option>
+                </select>
+                <div id="product-category-error" class="form-error"></div>
+              </div>
+              <div class="form-group">
+                <label for="product-condition">Condition *</label>
+                <select id="product-condition" class="form-control">
+                  <option value="">Select condition</option>
+                  <option value="New">New</option>
+                  <option value="Used - Like New">Used - Like New</option>
+                  <option value="Used - Good">Used - Good</option>
+                  <option value="Used - Fair">Used - Fair</option>
+                </select>
+                <div id="product-condition-error" class="form-error"></div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="product-price">Price (ETB) *</label>
+                <input type="number" id="product-price" class="form-control" placeholder="e.g. 5000" min="1">
+                <div id="product-price-error" class="form-error"></div>
+              </div>
+              <div class="form-group">
+                <label for="product-location">Location *</label>
+                <select id="product-location" class="form-control">
+                  <option value="">Select your city</option>
+                </select>
+                <div id="product-location-error" class="form-error"></div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="product-description">Description *</label>
+              <textarea id="product-description" class="form-control" placeholder="Describe your product — brand, features, condition, and reason for selling." maxlength="500"></textarea>
+              <div id="char-counter" class="char-counter">0 / 500</div>
+              <div id="product-description-error" class="form-error"></div>
+            </div>
+
+            <div class="form-group">
+              <label>Upload Images</label>
+              <div id="image-upload-area" class="image-upload">
+                <div class="image-upload-icon">📷</div>
+                <p>Click to upload product images</p>
+                <p class="form-hint">JPG or PNG, up to 5MB (preview only for now)</p>
+              </div>
+              <input type="file" id="product-image" accept="image/*" style="display: none;">
+              <img id="image-preview" class="image-preview" alt="Image preview">
+            </div>
+
+            <div class="form-group">
+              <label for="product-contact">Contact Number *</label>
+              <input type="tel" id="product-contact" class="form-control" placeholder="+251 9XX XXX XXX">
+              <div id="product-contact-error" class="form-error"></div>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary btn-lg">Submit Listing</button>
+              <button type="reset" id="reset-btn" class="btn btn-secondary btn-lg">Reset</button>
+            </div>
+          </form>
+
+          <!-- Success Message -->
+          <div id="success-message" class="success-message">
+            <div class="success-icon">✅</div>
+            <h2>Listing Submitted!</h2>
+            <p>Your product details have been validated successfully. Once the backend is connected, your listing will appear on the marketplace.</p>
+            <a href="marketplace.html" class="btn btn-primary">View Marketplace</a>
+            <button type="button" onclick="location.reload()" class="btn btn-secondary" style="margin-left: var(--space-sm);">List Another Item</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border: none; padding-top: var(--space-lg);">
+        <p>&copy; 2026 Ethio Marketplace. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scroll-top" class="scroll-top" aria-label="Scroll to top">↑</button>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/utils.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/sell-item.js"></script>
+</body>
+</html>

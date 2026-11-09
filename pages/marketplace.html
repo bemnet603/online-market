@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse the Ethio Marketplace - search, filter, and discover local listings.">
+  <title>Marketplace - Ethio Marketplace</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container">
+      <a href="../index.html" class="navbar-brand">
+        <span class="brand-icon">🛒</span>
+        Ethio Marketplace
+      </a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">☰</button>
+      <div id="nav-links" class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="marketplace.html">Marketplace</a>
+        <a href="sell-item.html">Sell Item</a>
+      </div>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        <a href="login.html" class="btn btn-secondary btn-sm">Login</a>
+        <a href="register.html" class="btn btn-primary btn-sm">Register</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <h1>Marketplace</h1>
+        <p>Browse, search, and filter listings from sellers across Ethiopia.</p>
+      </div>
+    </div>
+
+    <section class="section section-compact">
+      <div class="container">
+
+        <!-- Layout notice -->
+        <div class="info-banner">
+          <p>
+            <strong>Layout Preview:</strong> The cards below are reusable templates.
+            Real listings will appear here once sellers start posting and the database is connected.
+          </p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="filter-bar">
+          <form id="search-form" role="search">
+            <div class="filter-row">
+              <div class="filter-group">
+                <label for="search-input">Search</label>
+                <input type="search" id="search-input" class="form-control" placeholder="Search by category or location...">
+              </div>
+              <div class="filter-group">
+                <label for="filter-category">Category</label>
+                <select id="filter-category" class="form-control">
+                  <option value="">All Categories</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label for="filter-location">Location</label>
+                <select id="filter-location" class="form-control">
+                  <option value="">All Locations</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label for="filter-condition">Condition</label>
+                <select id="filter-condition" class="form-control">
+                  <option value="">All Conditions</option>
+                </select>
+              </div>
+            </div>
+          </form>
+
+          <div class="filter-footer">
+            <p id="results-count" class="text-muted">Loading...</p>
+            <div class="filter-group">
+              <label for="sort-select">Sort By</label>
+              <select id="sort-select" class="form-control sort-select">
+                <option value="newest">Newest</option>
+                <option value="oldest">Oldest</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div id="products-grid" class="products-grid"></div>
+
+        <!-- No Results -->
+        <div id="no-results" class="no-results" style="display: none;">
+          <div class="no-results-icon">🔍</div>
+          <h3>No Results Found</h3>
+          <p>Try adjusting your search or filters. Be the first to list in this category.</p>
+          <a href="sell-item.html" class="btn btn-primary">Sell an Item</a>
+        </div>
+
+        <!-- Pagination -->
+        <div id="pagination" class="pagination"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border: none; padding-top: var(--space-lg);">
+        <p>&copy; 2026 Ethio Marketplace. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scroll-top" class="scroll-top" aria-label="Scroll to top">↑</button>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/utils.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/marketplace.js"></script>
+</body>
+</html>

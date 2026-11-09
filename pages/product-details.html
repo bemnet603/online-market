@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View product details on Ethio Marketplace.">
+  <title>Product Details - Ethio Marketplace</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container">
+      <a href="../index.html" class="navbar-brand">
+        <span class="brand-icon">🛒</span>
+        Ethio Marketplace
+      </a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">☰</button>
+      <div id="nav-links" class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="marketplace.html">Marketplace</a>
+        <a href="sell-item.html">Sell Item</a>
+      </div>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        <a href="login.html" class="btn btn-secondary btn-sm">Login</a>
+        <a href="register.html" class="btn btn-primary btn-sm">Register</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div id="product-details-content" class="product-details">
+      <div class="container">
+
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a> &rsaquo;
+          <a href="marketplace.html">Marketplace</a> &rsaquo;
+          <span id="product-breadcrumb">Product Name</span>
+        </nav>
+
+        <div class="product-details-grid">
+          <!-- Product Image Placeholder -->
+          <div>
+            <div class="placeholder-image large" role="img" aria-label="Product image placeholder">
+              <span class="placeholder-label">Product Image</span>
+            </div>
+          </div>
+
+          <!-- Product Information -->
+          <div class="product-info">
+            <h1>Product Name</h1>
+
+            <ul class="product-meta-list">
+              <li><strong>Category</strong> <span id="product-category">Category</span></li>
+              <li><strong>Condition</strong> <span id="product-condition">Condition</span></li>
+              <li><strong>Location</strong> <span id="product-location">Location</span></li>
+              <li><strong>Price</strong> <span>ETB —</span></li>
+            </ul>
+
+            <div class="product-description">
+              <h3>Description</h3>
+              <p id="product-description-text">
+                Product description will appear here. Sellers will provide details about the item,
+                its condition, and any other relevant information when they create a listing.
+              </p>
+            </div>
+
+            <!-- Seller Information -->
+            <div class="seller-card">
+              <h3>Seller Information</h3>
+              <div class="seller-info">
+                <div class="seller-avatar">S</div>
+                <div>
+                  <p class="seller-name">Seller Name</p>
+                  <p class="seller-detail">📍 Location</p>
+                  <p class="seller-detail">📞 Contact Number</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-actions">
+              <button id="contact-seller-btn" class="btn btn-primary btn-lg">Contact Seller</button>
+              <a href="marketplace.html" class="btn btn-secondary btn-lg">Back to Marketplace</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Products (layout only) -->
+        <section id="related-products-section" class="related-products">
+          <h2>Related Products</h2>
+          <p class="text-muted" style="margin-bottom: var(--space-xl);">Related listings will appear here based on category.</p>
+          <div id="related-products-grid" class="products-grid"></div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border: none; padding-top: var(--space-lg);">
+        <p>&copy; 2026 Ethio Marketplace. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scroll-top" class="scroll-top" aria-label="Scroll to top">↑</button>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/utils.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/product-details.js"></script>
+</body>
+</html>
